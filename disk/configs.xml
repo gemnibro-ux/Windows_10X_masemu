@@ -1,0 +1,7 @@
+<?xml version="1.0" charset="utf-8">
+<Settings>
+    <Window width="1280" height="720" fullscreen="false" />
+    <Audio volume="80" />
+    <Theme background="blur.jpg" colorR="235", colorG="235", colorB="235", colorA="255"/>
+</Settings>
+
