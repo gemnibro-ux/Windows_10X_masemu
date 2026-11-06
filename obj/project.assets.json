@@ -2,19 +2,26 @@
   "version": 4,
   "targets": {
     "net10.0": {
-      "Raylib-cs/7.0.2": {
+      "Raylib-cs/8.1.0": {
         "type": "package",
         "compile": {
-          "lib/net8.0/Raylib-cs.dll": {
+          "lib/net10.0/Raylib-cs.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net8.0/Raylib-cs.dll": {
+          "lib/net10.0/Raylib-cs.dll": {
             "related": ".xml"
           }
         },
+        "build": {
+          "buildTransitive/Raylib-cs.targets": {}
+        },
         "runtimeTargets": {
+          "runtimes/browser-wasm/native/raylib.a": {
+            "assetType": "native",
+            "rid": "browser-wasm"
+          },
           "runtimes/linux-x64/native/libraylib.so": {
             "assetType": "native",
             "rid": "linux-x64"
@@ -40,21 +47,23 @@
     }
   },
   "libraries": {
-    "Raylib-cs/7.0.2": {
-      "sha512": "tpisH03Z9AfdTKFTe7iIA7RNeSaQFE97A+7ApXJUaOHzg2hczBXA1J/2uF7teKHsVXSuGqoV2aHAbaeJJMqulw==",
+    "Raylib-cs/8.1.0": {
+      "sha512": "5BH1IoueW/47PjykoD5rHSQGkfG/0ROdv1Lj/LiJ+m/KBmDAmDRyXRpgS/qOZL6ScIMtnY5nG31dQ58y/VVXUg==",
       "type": "package",
-      "path": "raylib-cs/7.0.2",
+      "path": "raylib-cs/8.1.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "README.md",
-        "lib/net6.0/Raylib-cs.dll",
-        "lib/net6.0/Raylib-cs.xml",
+        "buildTransitive/Raylib-cs.targets",
+        "lib/net10.0/Raylib-cs.dll",
+        "lib/net10.0/Raylib-cs.xml",
         "lib/net8.0/Raylib-cs.dll",
         "lib/net8.0/Raylib-cs.xml",
-        "raylib-cs.7.0.2.nupkg.sha512",
+        "raylib-cs.8.1.0.nupkg.sha512",
         "raylib-cs.nuspec",
         "raylib-cs_64x64.png",
+        "runtimes/browser-wasm/native/raylib.a",
         "runtimes/linux-x64/native/libraylib.so",
         "runtimes/osx-arm64/native/libraylib.dylib",
         "runtimes/osx-x64/native/libraylib.dylib",
@@ -65,7 +74,7 @@
   },
   "projectFileDependencyGroups": {
     "net10.0": [
-      "Raylib-cs >= 7.0.2"
+      "Raylib-cs >= 8.1.0"
     ]
   },
   "packageFolders": {
@@ -115,7 +124,7 @@
         "dependencies": {
           "Raylib-cs": {
             "target": "Package",
-            "version": "[7.0.2, )"
+            "version": "[8.1.0, )"
           }
         },
         "imports": [
